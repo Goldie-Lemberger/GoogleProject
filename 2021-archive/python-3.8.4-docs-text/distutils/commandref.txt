@@ -1,0 +1,70 @@
+8. Command Reference
+********************
+
+Note:
+
+  This document is being retained solely until the "setuptools"
+  documentation at
+  https://setuptools.readthedocs.io/en/latest/setuptools.html
+  independently covers all of the relevant information currently
+  included here.
+
+
+8.1. Installing modules: the **install** command family
+=======================================================
+
+The install command ensures that the build commands have been run and
+then runs the subcommands **install_lib**, **install_data** and
+**install_scripts**.
+
+
+8.1.1. **install_data**
+-----------------------
+
+This command installs all data files provided with the distribution.
+
+
+8.1.2. **install_scripts**
+--------------------------
+
+This command installs all (Python) scripts in the distribution.
+
+
+8.2. Creating a source distribution: the **sdist** command
+==========================================================
+
+The manifest template commands are:
+
++---------------------------------------------+-------------------------------------------------+
+| Command                                     | Description                                     |
+|=============================================|=================================================|
+| **include pat1 pat2 ...**                   | include all files matching any of the listed    |
+|                                             | patterns                                        |
++---------------------------------------------+-------------------------------------------------+
+| **exclude pat1 pat2 ...**                   | exclude all files matching any of the listed    |
+|                                             | patterns                                        |
++---------------------------------------------+-------------------------------------------------+
+| **recursive-include dir pat1 pat2 ...**     | include all files under *dir* matching any of   |
+|                                             | the listed patterns                             |
++---------------------------------------------+-------------------------------------------------+
+| **recursive-exclude dir pat1 pat2 ...**     | exclude all files under *dir* matching any of   |
+|                                             | the listed patterns                             |
++---------------------------------------------+-------------------------------------------------+
+| **global-include pat1 pat2 ...**            | include all files anywhere in the source tree   |
+|                                             | matching --- & any of the listed patterns       |
++---------------------------------------------+-------------------------------------------------+
+| **global-exclude pat1 pat2 ...**            | exclude all files anywhere in the source tree   |
+|                                             | matching --- & any of the listed patterns       |
++---------------------------------------------+-------------------------------------------------+
+| **prune dir**                               | exclude all files under *dir*                   |
++---------------------------------------------+-------------------------------------------------+
+| **graft dir**                               | include all files under *dir*                   |
++---------------------------------------------+-------------------------------------------------+
+
+The patterns here are Unix-style "glob" patterns: "*" matches any
+sequence of regular filename characters, "?" matches any single
+regular filename character, and "[range]" matches any of the
+characters in *range* (e.g., "a-z", "a-zA-Z", "a-f0-9_.").  The
+definition of "regular filename character" is platform-specific: on
+Unix it is anything except slash; on Windows anything except backslash
+or colon.

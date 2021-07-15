@@ -1,0 +1,134 @@
+Python Runtime Services
+***********************
+
+The modules described in this chapter provide a wide range of services
+related to the Python interpreter and its interaction with its
+environment.  Here's an overview:
+
+* "sys" --- System-specific parameters and functions
+
+* "sysconfig" --- Provide access to Python's configuration information
+
+  * Configuration variables
+
+  * Installation paths
+
+  * Other functions
+
+  * Using "sysconfig" as a script
+
+* "builtins" --- Built-in objects
+
+* "__main__" --- Top-level script environment
+
+* "warnings" --- Warning control
+
+  * Warning Categories
+
+  * The Warnings Filter
+
+    * Describing Warning Filters
+
+    * Default Warning Filter
+
+    * Overriding the default filter
+
+  * Temporarily Suppressing Warnings
+
+  * Testing Warnings
+
+  * Updating Code For New Versions of Dependencies
+
+  * Available Functions
+
+  * Available Context Managers
+
+* "dataclasses" --- Data Classes
+
+  * Module-level decorators, classes, and functions
+
+  * Post-init processing
+
+  * Class variables
+
+  * Init-only variables
+
+  * Frozen instances
+
+  * Inheritance
+
+  * Default factory functions
+
+  * Mutable default values
+
+  * Exceptions
+
+* "contextlib" --- Utilities for "with"-statement contexts
+
+  * Utilities
+
+  * Examples and Recipes
+
+    * Supporting a variable number of context managers
+
+    * Catching exceptions from "__enter__" methods
+
+    * Cleaning up in an "__enter__" implementation
+
+    * Replacing any use of "try-finally" and flag variables
+
+    * Using a context manager as a function decorator
+
+  * Single use, reusable and reentrant context managers
+
+    * Reentrant context managers
+
+    * Reusable context managers
+
+* "abc" --- Abstract Base Classes
+
+* "atexit" --- Exit handlers
+
+  * "atexit" Example
+
+* "traceback" --- Print or retrieve a stack traceback
+
+  * "TracebackException" Objects
+
+  * "StackSummary" Objects
+
+  * "FrameSummary" Objects
+
+  * Traceback Examples
+
+* "__future__" --- Future statement definitions
+
+* "gc" --- Garbage Collector interface
+
+* "inspect" --- Inspect live objects
+
+  * Types and members
+
+  * Retrieving source code
+
+  * Introspecting callables with the Signature object
+
+  * Classes and functions
+
+  * The interpreter stack
+
+  * Fetching attributes statically
+
+  * Current State of Generators and Coroutines
+
+  * Code Objects Bit Flags
+
+  * Command Line Interface
+
+* "site" --- Site-specific configuration hook
+
+  * Readline configuration
+
+  * Module contents
+
+  * Command Line Interface

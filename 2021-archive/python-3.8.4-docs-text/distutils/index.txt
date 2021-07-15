@@ -1,0 +1,217 @@
+Distributing Python Modules (Legacy version)
+********************************************
+
+Authors:
+   Greg Ward, Anthony Baxter
+
+Email:
+   distutils-sig@python.org
+
+See also:
+
+  Distributing Python Modules
+     The up to date module distribution documentations
+
+Note:
+
+  This document is being retained solely until the "setuptools"
+  documentation at
+  https://setuptools.readthedocs.io/en/latest/setuptools.html
+  independently covers all of the relevant information currently
+  included here.
+
+Note:
+
+  This guide only covers the basic tools for building and distributing
+  extensions that are provided as part of this version of Python.
+  Third party tools offer easier to use and more secure alternatives.
+  Refer to the quick recommendations section in the Python Packaging
+  User Guide for more information.
+
+This document describes the Python Distribution Utilities
+("Distutils") from the module developer's point of view, describing
+the underlying capabilities that "setuptools" builds on to allow
+Python developers to make Python modules and extensions readily
+available to a wider audience.
+
+* 1. An Introduction to Distutils
+
+  * 1.1. Concepts & Terminology
+
+  * 1.2. A Simple Example
+
+  * 1.3. General Python terminology
+
+  * 1.4. Distutils-specific terminology
+
+* 2. Writing the Setup Script
+
+  * 2.1. Listing whole packages
+
+  * 2.2. Listing individual modules
+
+  * 2.3. Describing extension modules
+
+  * 2.4. Relationships between Distributions and Packages
+
+  * 2.5. Installing Scripts
+
+  * 2.6. Installing Package Data
+
+  * 2.7. Installing Additional Files
+
+  * 2.8. Additional meta-data
+
+  * 2.9. Debugging the setup script
+
+* 3. Writing the Setup Configuration File
+
+* 4. Creating a Source Distribution
+
+  * 4.1. Specifying the files to distribute
+
+  * 4.2. Manifest-related options
+
+* 5. Creating Built Distributions
+
+  * 5.1. Creating RPM packages
+
+  * 5.2. Creating Windows Installers
+
+  * 5.3. Cross-compiling on Windows
+
+  * 5.4. Vista User Access Control (UAC)
+
+* 6. Distutils Examples
+
+  * 6.1. Pure Python distribution (by module)
+
+  * 6.2. Pure Python distribution (by package)
+
+  * 6.3. Single extension module
+
+  * 6.4. Checking a package
+
+  * 6.5. Reading the metadata
+
+* 7. Extending Distutils
+
+  * 7.1. Integrating new commands
+
+  * 7.2. Adding new distribution types
+
+* 8. Command Reference
+
+  * 8.1. Installing modules: the **install** command family
+
+  * 8.2. Creating a source distribution: the **sdist** command
+
+* 9. API Reference
+
+  * 9.1. "distutils.core" --- Core Distutils functionality
+
+  * 9.2. "distutils.ccompiler" --- CCompiler base class
+
+  * 9.3. "distutils.unixccompiler" --- Unix C Compiler
+
+  * 9.4. "distutils.msvccompiler" --- Microsoft Compiler
+
+  * 9.5. "distutils.bcppcompiler" --- Borland Compiler
+
+  * 9.6. "distutils.cygwincompiler" --- Cygwin Compiler
+
+  * 9.7. "distutils.archive_util" ---  Archiving utilities
+
+  * 9.8. "distutils.dep_util" --- Dependency checking
+
+  * 9.9. "distutils.dir_util" --- Directory tree operations
+
+  * 9.10. "distutils.file_util" --- Single file operations
+
+  * 9.11. "distutils.util" --- Miscellaneous other utility functions
+
+  * 9.12. "distutils.dist" --- The Distribution class
+
+  * 9.13. "distutils.extension" --- The Extension class
+
+  * 9.14. "distutils.debug" --- Distutils debug mode
+
+  * 9.15. "distutils.errors" --- Distutils exceptions
+
+  * 9.16. "distutils.fancy_getopt" --- Wrapper around the standard
+    getopt module
+
+  * 9.17. "distutils.filelist" --- The FileList class
+
+  * 9.18. "distutils.log" --- Simple **PEP 282**-style logging
+
+  * 9.19. "distutils.spawn" --- Spawn a sub-process
+
+  * 9.20. "distutils.sysconfig" --- System configuration information
+
+  * 9.21. "distutils.text_file" --- The TextFile class
+
+  * 9.22. "distutils.version" --- Version number classes
+
+  * 9.23. "distutils.cmd" --- Abstract base class for Distutils
+    commands
+
+  * 9.24. Creating a new Distutils command
+
+  * 9.25. "distutils.command" --- Individual Distutils commands
+
+  * 9.26. "distutils.command.bdist" --- Build a binary installer
+
+  * 9.27. "distutils.command.bdist_packager" --- Abstract base class
+    for packagers
+
+  * 9.28. "distutils.command.bdist_dumb" --- Build a "dumb" installer
+
+  * 9.29. "distutils.command.bdist_msi" --- Build a Microsoft
+    Installer binary package
+
+  * 9.30. "distutils.command.bdist_rpm" --- Build a binary
+    distribution as a Redhat RPM and SRPM
+
+  * 9.31. "distutils.command.bdist_wininst" --- Build a Windows
+    installer
+
+  * 9.32. "distutils.command.sdist" --- Build a source distribution
+
+  * 9.33. "distutils.command.build" --- Build all files of a package
+
+  * 9.34. "distutils.command.build_clib" --- Build any C libraries in
+    a package
+
+  * 9.35. "distutils.command.build_ext" --- Build any extensions in a
+    package
+
+  * 9.36. "distutils.command.build_py" --- Build the .py/.pyc files of
+    a package
+
+  * 9.37. "distutils.command.build_scripts" --- Build the scripts of a
+    package
+
+  * 9.38. "distutils.command.clean" --- Clean a package build area
+
+  * 9.39. "distutils.command.config" --- Perform package configuration
+
+  * 9.40. "distutils.command.install" --- Install a package
+
+  * 9.41. "distutils.command.install_data" --- Install data files from
+    a package
+
+  * 9.42. "distutils.command.install_headers" --- Install C/C++ header
+    files from a package
+
+  * 9.43. "distutils.command.install_lib" --- Install library files
+    from a package
+
+  * 9.44. "distutils.command.install_scripts" --- Install script files
+    from a package
+
+  * 9.45. "distutils.command.register" --- Register a module with the
+    Python Package Index
+
+  * 9.46. "distutils.command.check" --- Check the meta-data of a
+    package

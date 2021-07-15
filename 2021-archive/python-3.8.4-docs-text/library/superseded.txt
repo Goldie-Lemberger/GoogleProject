@@ -1,0 +1,91 @@
+Superseded Modules
+******************
+
+The modules described in this chapter are deprecated and only kept for
+backwards compatibility. They have been superseded by other modules.
+
+* "optparse" --- Parser for command line options
+
+  * Background
+
+    * Terminology
+
+    * What are options for?
+
+    * What are positional arguments for?
+
+  * Tutorial
+
+    * Understanding option actions
+
+    * The store action
+
+    * Handling boolean (flag) options
+
+    * Other actions
+
+    * Default values
+
+    * Generating help
+
+      * Grouping Options
+
+    * Printing a version string
+
+    * How "optparse" handles errors
+
+    * Putting it all together
+
+  * Reference Guide
+
+    * Creating the parser
+
+    * Populating the parser
+
+    * Defining options
+
+    * Option attributes
+
+    * Standard option actions
+
+    * Standard option types
+
+    * Parsing arguments
+
+    * Querying and manipulating your option parser
+
+    * Conflicts between options
+
+    * Cleanup
+
+    * Other methods
+
+  * Option Callbacks
+
+    * Defining a callback option
+
+    * How callbacks are called
+
+    * Raising errors in a callback
+
+    * Callback example 1: trivial callback
+
+    * Callback example 2: check option order
+
+    * Callback example 3: check option order (generalized)
+
+    * Callback example 4: check arbitrary condition
+
+    * Callback example 5: fixed arguments
+
+    * Callback example 6: variable arguments
+
+  * Extending "optparse"
+
+    * Adding new types
+
+    * Adding new actions
+
+* "imp" --- Access the *import* internals
+
+  * Examples

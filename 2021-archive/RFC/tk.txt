@@ -1,0 +1,238 @@
+Graphical User Interfaces with Tk
+*********************************
+
+Tk/Tcl has long been an integral part of Python.  It provides a robust
+and platform independent windowing toolkit, that is available to
+Python programmers using the "tkinter" package, and its extension, the
+"tkinter.tix" and the "tkinter.ttk" modules.
+
+The "tkinter" package is a thin object-oriented layer on top of
+Tcl/Tk. To use "tkinter", you don't need to write Tcl code, but you
+will need to consult the Tk documentation, and occasionally the Tcl
+documentation. "tkinter" is a set of wrappers that implement the Tk
+widgets as Python classes.  In addition, the internal module
+"_tkinter" provides a threadsafe mechanism which allows Python and Tcl
+to interact.
+
+"tkinter"'s chief virtues are that it is fast, and that it usually
+comes bundled with Python. Although its standard documentation is
+weak, good material is available, which includes: references,
+tutorials, a book and others. "tkinter" is also famous for having an
+outdated look and feel, which has been vastly improved in Tk 8.5.
+Nevertheless, there are many other GUI libraries that you could be
+interested in. For more information about alternatives, see the Other
+Graphical User Interface Packages section.
+
+* "tkinter" --- Python interface to Tcl/Tk
+
+  * Tkinter Modules
+
+  * Tkinter Life Preserver
+
+    * How To Use This Section
+
+    * A Simple Hello World Program
+
+  * A (Very) Quick Look at Tcl/Tk
+
+  * Mapping Basic Tk into Tkinter
+
+  * How Tk and Tkinter are Related
+
+  * Handy Reference
+
+    * Setting Options
+
+    * The Packer
+
+    * Packer Options
+
+    * Coupling Widget Variables
+
+    * The Window Manager
+
+    * Tk Option Data Types
+
+    * Bindings and Events
+
+    * The index Parameter
+
+    * Images
+
+  * File Handlers
+
+* "tkinter.ttk" --- Tk themed widgets
+
+  * Using Ttk
+
+  * Ttk Widgets
+
+  * Widget
+
+    * Standard Options
+
+    * Scrollable Widget Options
+
+    * Label Options
+
+    * Compatibility Options
+
+    * Widget States
+
+    * ttk.Widget
+
+  * Combobox
+
+    * Options
+
+    * Virtual events
+
+    * ttk.Combobox
+
+  * Spinbox
+
+    * Options
+
+    * Virtual events
+
+    * ttk.Spinbox
+
+  * Notebook
+
+    * Options
+
+    * Tab Options
+
+    * Tab Identifiers
+
+    * Virtual Events
+
+    * ttk.Notebook
+
+  * Progressbar
+
+    * Options
+
+    * ttk.Progressbar
+
+  * Separator
+
+    * Options
+
+  * Sizegrip
+
+    * Platform-specific notes
+
+    * Bugs
+
+  * Treeview
+
+    * Options
+
+    * Item Options
+
+    * Tag Options
+
+    * Column Identifiers
+
+    * Virtual Events
+
+    * ttk.Treeview
+
+  * Ttk Styling
+
+    * Layouts
+
+* "tkinter.tix" --- Extension widgets for Tk
+
+  * Using Tix
+
+  * Tix Widgets
+
+    * Basic Widgets
+
+    * File Selectors
+
+    * Hierarchical ListBox
+
+    * Tabular ListBox
+
+    * Manager Widgets
+
+    * Image Types
+
+    * Miscellaneous Widgets
+
+    * Form Geometry Manager
+
+  * Tix Commands
+
+* "tkinter.scrolledtext" --- Scrolled Text Widget
+
+* IDLE
+
+  * Menus
+
+    * File menu (Shell and Editor)
+
+    * Edit menu (Shell and Editor)
+
+    * Format menu (Editor window only)
+
+    * Run menu (Editor window only)
+
+    * Shell menu (Shell window only)
+
+    * Debug menu (Shell window only)
+
+    * Options menu (Shell and Editor)
+
+    * Window menu (Shell and Editor)
+
+    * Help menu (Shell and Editor)
+
+    * Context Menus
+
+  * Editing and navigation
+
+    * Editor windows
+
+    * Key bindings
+
+    * Automatic indentation
+
+    * Completions
+
+    * Calltips
+
+    * Code Context
+
+    * Python Shell window
+
+    * Text colors
+
+  * Startup and code execution
+
+    * Command line usage
+
+    * Startup failure
+
+    * Running user code
+
+    * User output in Shell
+
+    * Developing tkinter applications
+
+    * Running without a subprocess
+
+  * Help and preferences
+
+    * Help sources
+
+    * Setting preferences
+
+    * IDLE on macOS
+
+    * Extensions
+
+* Other Graphical User Interface Packages

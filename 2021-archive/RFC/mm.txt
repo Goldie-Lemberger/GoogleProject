@@ -1,0 +1,37 @@
+Multimedia Services
+*******************
+
+The modules described in this chapter implement various algorithms or
+interfaces that are mainly useful for multimedia applications.  They
+are available at the discretion of the installation.  Here's an
+overview:
+
+* "audioop" --- Manipulate raw audio data
+
+* "aifc" --- Read and write AIFF and AIFC files
+
+* "sunau" --- Read and write Sun AU files
+
+  * AU_read Objects
+
+  * AU_write Objects
+
+* "wave" --- Read and write WAV files
+
+  * Wave_read Objects
+
+  * Wave_write Objects
+
+* "chunk" --- Read IFF chunked data
+
+* "colorsys" --- Conversions between color systems
+
+* "imghdr" --- Determine the type of an image
+
+* "sndhdr" --- Determine type of sound file
+
+* "ossaudiodev" --- Access to OSS-compatible audio devices
+
+  * Audio Device Objects
+
+  * Mixer Device Objects

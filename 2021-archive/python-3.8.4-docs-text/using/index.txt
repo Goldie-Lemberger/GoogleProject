@@ -1,0 +1,135 @@
+Python Setup and Usage
+**********************
+
+This part of the documentation is devoted to general information on
+the setup of the Python environment on different platforms, the
+invocation of the interpreter and things that make working with Python
+easier.
+
+* 1. Command line and environment
+
+  * 1.1. Command line
+
+    * 1.1.1. Interface options
+
+    * 1.1.2. Generic options
+
+    * 1.1.3. Miscellaneous options
+
+    * 1.1.4. Options you shouldn't use
+
+  * 1.2. Environment variables
+
+    * 1.2.1. Debug-mode variables
+
+* 2. Using Python on Unix platforms
+
+  * 2.1. Getting and installing the latest version of Python
+
+    * 2.1.1. On Linux
+
+    * 2.1.2. On FreeBSD and OpenBSD
+
+    * 2.1.3. On OpenSolaris
+
+  * 2.2. Building Python
+
+  * 2.3. Python-related paths and files
+
+  * 2.4. Miscellaneous
+
+* 3. Using Python on Windows
+
+  * 3.1. The full installer
+
+    * 3.1.1. Installation steps
+
+    * 3.1.2. Removing the MAX_PATH Limitation
+
+    * 3.1.3. Installing Without UI
+
+    * 3.1.4. Installing Without Downloading
+
+    * 3.1.5. Modifying an install
+
+  * 3.2. The Microsoft Store package
+
+    * 3.2.1. Known Issues
+
+  * 3.3. The nuget.org packages
+
+  * 3.4. The embeddable package
+
+    * 3.4.1. Python Application
+
+    * 3.4.2. Embedding Python
+
+  * 3.5. Alternative bundles
+
+  * 3.6. Configuring Python
+
+    * 3.6.1. Excursus: Setting environment variables
+
+    * 3.6.2. Finding the Python executable
+
+  * 3.7. UTF-8 mode
+
+  * 3.8. Python Launcher for Windows
+
+    * 3.8.1. Getting started
+
+      * 3.8.1.1. From the command-line
+
+      * 3.8.1.2. Virtual environments
+
+      * 3.8.1.3. From a script
+
+      * 3.8.1.4. From file associations
+
+    * 3.8.2. Shebang Lines
+
+    * 3.8.3. Arguments in shebang lines
+
+    * 3.8.4. Customization
+
+      * 3.8.4.1. Customization via INI files
+
+      * 3.8.4.2. Customizing default Python versions
+
+    * 3.8.5. Diagnostics
+
+  * 3.9. Finding modules
+
+  * 3.10. Additional modules
+
+    * 3.10.1. PyWin32
+
+    * 3.10.2. cx_Freeze
+
+    * 3.10.3. WConio
+
+  * 3.11. Compiling Python on Windows
+
+  * 3.12. Other Platforms
+
+* 4. Using Python on a Macintosh
+
+  * 4.1. Getting and Installing MacPython
+
+    * 4.1.1. How to run a Python script
+
+    * 4.1.2. Running scripts with a GUI
+
+    * 4.1.3. Configuration
+
+  * 4.2. The IDE
+
+  * 4.3. Installing Additional Python Packages
+
+  * 4.4. GUI Programming on the Mac
+
+  * 4.5. Distributing Python Applications on the Mac
+
+  * 4.6. Other Resources
+
+* 5. Editors and IDEs

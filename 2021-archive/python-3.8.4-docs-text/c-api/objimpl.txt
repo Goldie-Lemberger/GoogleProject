@@ -1,0 +1,45 @@
+Object Implementation Support
+*****************************
+
+This chapter describes the functions, types, and macros used when
+defining new object types.
+
+* Allocating Objects on the Heap
+
+* Common Object Structures
+
+* Type Objects
+
+  * Quick Reference
+
+    * "tp slots"
+
+    * sub-slots
+
+    * slot typedefs
+
+  * PyTypeObject Definition
+
+  * PyObject Slots
+
+  * PyVarObject Slots
+
+  * PyTypeObject Slots
+
+  * Heap Types
+
+* Number Object Structures
+
+* Mapping Object Structures
+
+* Sequence Object Structures
+
+* Buffer Object Structures
+
+* Async Object Structures
+
+* Slot Type typedefs
+
+* Examples
+
+* Supporting Cyclic Garbage Collection
