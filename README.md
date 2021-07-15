@@ -1,5 +1,5 @@
-#Google Project - Search auto complete
-##By Pliah Paz and Goldie Lemberger
+# Google Project - Search auto complete
+## By Pliah Paz and Goldie Lemberger
 
 **Description** 
 
@@ -34,4 +34,6 @@ run the main.py file
 first to initiliztion the data add to configuration  - ***initialization***
 
 after that change to - ***query*** for all search.
+
+you can insert file directory or 2021-archive directory
 
